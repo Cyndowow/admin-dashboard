@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 8fr;
+    gap: 10px;
+}
+
+.sidebar {
+    grid-row: 1 / 8;
+    background-color: blue;
+    color: white;
+}
+
+.search {
+    grid-area: 2 / 3 / 1 / 2;
+}
+
+.bar {
+    grid-row: 2 / 3;
+}
+
+.main {
+    grid-row: 3 / 8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
